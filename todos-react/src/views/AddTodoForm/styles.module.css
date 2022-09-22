@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: var(--spacing-xs);
+  padding: 0 var(--spacing-xxs);
+  line-height: 0;
+  transition: padding .1s;
+}
+
+.form:focus-within {
+  padding: 0;
+}
+
+.input {
+  flex-grow: 1;
+}

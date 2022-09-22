@@ -1,0 +1,11 @@
+.input {
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: var(--spacing-xs);
+  background-color: #242424;;
+}
+
+.input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}

@@ -1,0 +1,12 @@
+.removeTodoButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+
+.removeTodoButton::after {
+  content: 'X';
+  display: inline-block;
+  position: relative;
+}

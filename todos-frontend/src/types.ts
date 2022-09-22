@@ -1,7 +1,7 @@
 export type Todo = {
 	id: string;
 	title: string;
-	done: boolean;
+	done: 0 | 1;
 }
 
 export type TodosClientInitMessage = {
@@ -28,5 +28,9 @@ export type TodosRemoveMessage = {
 
 export type TodosServerMessage = TodosServerAddMessage | TodosServerToggleMessage | TodosRemoveMessage;
 
-export type TodosClientMessage = TodosClientInitMessage | TodosClientAddMessage | TodosClientUpdateMessage | TodosRemoveMessage;
+export type TodosClientMessage =
+	TodosClientInitMessage
+	| TodosClientAddMessage
+	| TodosClientUpdateMessage
+	| TodosRemoveMessage;
 

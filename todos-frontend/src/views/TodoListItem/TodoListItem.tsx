@@ -10,9 +10,8 @@ type OwnProps = {
 }
 
 const TodoListItem = ({todo, toggleTodo, removeTodo}: OwnProps) => {
-	console.log('completed', todo.done)
 	return <li className={styles.todoListItem}>
-		<input type="checkbox" checked={todo.done} onChange={() => toggleTodo(todo.id)}/>
+		<input type="checkbox" checked={Boolean(todo.done)} onChange={() => toggleTodo(todo.id)}/>
 		<span
 			className={classNames(styles.todoListItemTitle, todo.done && styles.todoListItemTitleDone)}>{todo.title}</span>
 		<RemoveTodoButton onClick={() => removeTodo(todo.id)}/>
